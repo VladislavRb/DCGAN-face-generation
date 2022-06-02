@@ -1,0 +1,13 @@
+﻿<components:GridPage x:Class="FaceGenerator.UI.Views.ImageGridPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:components="clr-namespace:FaceGenerator.UI.Components"
+      mc:Ignorable="d" 
+      Title="ImageGridPage" Factor="2" Cells="4">
+    <StackPanel Name="container" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid x:Name="imagesGrid" HorizontalAlignment="Center" VerticalAlignment="Center" ShowGridLines="true"></Grid>
+        <Button x:Name="generateButton" Width="100" Height="30" Content="Generate" Click="DrawNew" />
+    </StackPanel>
+</components:GridPage>

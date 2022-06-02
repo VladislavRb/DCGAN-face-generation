@@ -1,0 +1,15 @@
+﻿<components:BasePage x:Class="FaceGenerator.UI.Views.ImageGenerationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:components="clr-namespace:FaceGenerator.UI.Components"
+      mc:Ignorable="d" 
+      Title="ImageGenerationPage" Factor="3">
+    <StackPanel x:Name="container" Height="450" Width="800" Orientation="Horizontal" VerticalAlignment="Center">
+        <StackPanel x:Name="imageContainer" Width="400" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid x:Name="imagePanel"></Grid>
+        </StackPanel>
+        <StackPanel x:Name="rangesContainer" Width="400" Height="240" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center"></StackPanel>
+    </StackPanel>
+</components:BasePage>

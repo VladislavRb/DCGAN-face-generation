@@ -1,0 +1,18 @@
+﻿<Window x:Class="FaceGenerator.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FaceGenerator.UI.Components"
+        mc:Ignorable="d"
+        Title="MainWindow">
+    <StackPanel Width="1200" Height="650" HorizontalAlignment="Center" Orientation="Vertical">
+        <Frame Name="mainFrame" Width="1200" Height="600"
+               BorderBrush="Black" BorderThickness="1"
+               HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"></Frame>
+        <StackPanel x:Name="buttonsPanel" Height="50" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <local:NavigationButton Width="100" Height="30" PageUri="Views/ImageGridPage.xaml" Content="To Image Grid" Click="Navigate"></local:NavigationButton>
+            <local:NavigationButton Width="150" Height="30" Margin="20,0,0,0" PageUri="Views/ImageGenerationPage.xaml" Content="To Image Generation" Click="Navigate"></local:NavigationButton>
+        </StackPanel>
+    </StackPanel>
+</Window>
